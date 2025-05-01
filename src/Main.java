@@ -22,7 +22,7 @@ public class Main {
 
         for (int i = 0; i < cocineros.length; i++) {
             cocineros[i].mostrarinfo();
-            System.out.println(" ");
+            System.out.println("");
         }
 
     }

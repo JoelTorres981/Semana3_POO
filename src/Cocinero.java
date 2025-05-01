@@ -13,6 +13,7 @@ public class Cocinero {
         System.out.println("Nombre: "+nombre);
         System.out.println("Especialidad: "+especialidad);
         System.out.println("Años de experiencia: "+experiencia);
+        System.out.println("");
     }
 }
 
