@@ -1,4 +1,3 @@
-import java.lang.classfile.attribute.CompilationIDAttribute;
 import java.util.Scanner;
 
 public class Main {
