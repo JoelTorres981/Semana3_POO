@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // LECCION 1
+        // Joel Torres
         String nombre, especialidad;
         int experiencia;
 
