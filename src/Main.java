@@ -1,3 +1,4 @@
+import java.lang.classfile.attribute.CompilationIDAttribute;
 import java.util.Scanner;
 
 public class Main {
@@ -6,17 +7,24 @@ public class Main {
         int experiencia;
 
         Scanner scanner = new Scanner(System.in);
+        Cocinero[] cocineros = new Cocinero[3];
 
-        System.out.println("Ingrese informacion");
-        System.out.println("Nombre: ");
-        nombre = scanner.nextLine();
-        System.out.println("Especialidad: ");
-        especialidad = scanner.nextLine();
-        System.out.println("Experiencia: ");
-        experiencia = scanner.nextInt();
+        for (int i = 0; i < cocineros.length; i++) {
+            System.out.println("Ingrese informacion");
+            System.out.println("Nombre: ");
+            nombre = scanner.nextLine();
+            System.out.println("Especialidad: ");
+            especialidad = scanner.nextLine();
+            System.out.println("Experiencia: ");
+            experiencia = scanner.nextInt();
+            scanner.nextLine();
+            cocineros[i] = new Cocinero(nombre,especialidad,experiencia);
+        }
 
-        Cocinero cocinero = new Cocinero(nombre,especialidad,experiencia);
+        for (int i = 0; i < cocineros.length; i++) {
+            cocineros[i].mostrarinfo();
+            System.out.println("");
+        }
 
-        cocinero.mostrarinfo();
     }
 }
